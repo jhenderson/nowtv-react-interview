@@ -1,0 +1,19 @@
+[data-popup] {
+    position: relative;
+    display: inline-block;
+}
+
+[data-popup]:hover::after {
+    content: attr(data-popup);
+    border-radius: 5px;
+    display: block;
+    position: absolute;
+    background: #000;
+    opacity: 0.85;
+    min-width: 140px;
+    max-width: 250px;
+    padding: 8px;
+    top: -34px;
+    color: #FFF;
+    z-index: 100;
+}
